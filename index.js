@@ -40,7 +40,7 @@ app.post('/api/getData', async (req, res) => {
         res.json(documents);
     } catch (error) {
         console.log(error);
-        res.status(500).json({ error: 'An error occurred while processing your request.' });
+        res.status(500).json({ error: 'An error occurred while processing your request.',error });
     }
     // No need to close connection here if maintaining a persistent connection
 });
